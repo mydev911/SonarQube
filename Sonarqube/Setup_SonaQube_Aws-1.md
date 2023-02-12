@@ -33,6 +33,10 @@ Extract packages
 ```
 unzip sonarqube-developer-8.9.9.56886.zip
 ```
+Make a folder sonarqube
+```
+mkdir sonarqube
+```
 Move to sonarqube folder
 ```
 mv sonarqube-8.9.9.56886 sonarqube
@@ -46,14 +50,12 @@ ls
 
 
 ### Sonarqube does not run on root user / MUst create a user 
-#### /sonarqube
-
+#### /opt
+@opt
 ```
 useradd sonaradmin
 ```
-```
-passwd sonaradmin
-```
+
 ```
 visudo
 ```
@@ -61,8 +63,10 @@ visudo
 scrollING
 root ALL=(ALL)     ALL
 ```
+```
 sonaradmin ALL=(ALL) NOPASSWD:ALL
-````
+```
+
 Check
 ```
 ls -l
