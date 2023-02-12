@@ -33,9 +33,12 @@ Extract packages
 ```
 unzip sonarqube-developer-8.9.9.56886.zip
 ```
-##### if there is no uzip  
+Move to sonarqube folder
 ```
-yum install wget unzip -y
+mv sonarqube-8.9.9.56886 sonarqube
+```
+```
+cd /sonarqube
 ```
 ```
 ls
@@ -43,10 +46,13 @@ ls
 
 
 ### Sonarqube does not run on root user / MUst create a user 
-#### /opt
+#### /sonarqube
 
 ```
 useradd sonaradmin
+```
+```
+passwd sonaradmin
 ```
 ```
 visudo
@@ -60,7 +66,10 @@ ls -l
 ```
 
 Giving permission or Ownership of the file
-
+```
+cd ..
+ls -ltr
+```
 ```
 chown -R sonaradmin:sonaradmin /opt/sonarqube-8.9.9.56886
 ```
