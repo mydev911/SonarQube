@@ -58,6 +58,9 @@ passwd sonaradmin
 visudo
 ```
 ```
+scrollING
+root ALL=(ALL)     ALL
+```
 sonaradmin ALL=(ALL) NOPASSWD:ALL
 ````
 Check
