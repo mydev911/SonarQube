@@ -73,15 +73,15 @@ ls -l
 ```
 
 Giving permission or Ownership of the file
+
 ```
-cd ..
-ls -ltr
-```
-```
-chown -R sonaradmin:sonaradmin /opt/sonarqube-8.9.9.56886
+chown -R sonaradmin:sonaradmin /opt/sonarqube
 ```
 ```
-chmod -R 775 /opt/sonarqube-8.9.9.56886
+ll
+```
+```
+chmod -R 775 /opt/sonarqube
 ```
 
 To check
@@ -90,10 +90,19 @@ ll
 ```
 ##### Now switch to root user to sonaradmin user
 ```
-su - sonaradmin
+su sonaradmin -
 ```
 ```
-cd /opt/sonarqube-8.9.9.56886/
+pwd
+```
+```
+cd sonarqube
+```
+```
+ll
+```
+```
+cd sonarqube-8.9.9.56886
 ```
 ```
 ll
@@ -105,7 +114,7 @@ cd bin
 ls
 ```
 ```
-cd bin/linux-x86-64/
+cd linux-x86-64
 ```
 ```
 ./sonar.sh start
